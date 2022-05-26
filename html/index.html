@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="/css/style.css">
+    <title>A1 Jadson</title>
+</head>
+
+<body>
+    <section>   
+    <div class="swiper mySwiper container">
+    <div class="swiper-wrapper content">
+            
+        <div class="swiper-slide card">
+        <div class="card content">
+            <h1>Vikings</h1>
+            <div class="image">
+            <img src="/img/01.jpeg" alt="">
+            <h5>O poder é sempre perigoso. Ele atrai o pior e corrompe os melhores. O poder só é concedido àqueles que estão prontos para se curvar para obtê-lo.</h5>
+            </div>
+        </div>
+        </div>
+
+        <div class="swiper-slide card">
+        <div class="card content">
+            <h1>O Rei</h1>
+            <div class="image">
+            <img src="/img/02.jpeg" alt="">
+            <h5>Quando você joga o jogo dos tronos, você vence ou você morre.</h5>
+        </div>
+        </div>
+        </div>
+
+        <div class="swiper-slide card">
+        <div class="card content">
+            <h1>Futebol</h1>
+            <div class="image">
+            <img src="/img/03.jpeg" alt="">
+            <h5>Quem não gosta de futebol é maluco!</h5>
+        </div>
+        </div>
+        </div>
+
+        </div>
+        </div>
+
+        <div class="swiper-button next"></div>
+        <div class="swiper-button prev"></div>
+        <div class="swiper-pagination"></div>
+
+        </section>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <script>
+
+
+        var swiper = new Swiper(".mySwiper", {
+            loop: true,
+            loopFillGroupWithBlank: true,
+            slidesPerView: 1,
+            slidesPerGroup: 1,
+            spaceBetween: 10,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,},
+
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",},})
+
+    </script>
+    
+    <footer id="footer">
+
+        <button onclick="window.location.href = '/html/indexx.html'" id="botao">Página 2</button>
+
+          <div class="autor">
+            &copy; autor <strong><span>Jadson</span></strong>
+          </div>
+          <div class="github">
+            <a href="https://github.com/Jadson-GTR">github</a>
+          </div>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/stylee.css">
+    <title>A1 Jadson</title>
+</head>
+<body>
+   
+<section id="inicio">
+    <h1>Caixa ALTA e baixa</h1>
+    <p>digite seu texto</p>
+    </section>
+    
+    <input type="text" id="TextBox"/>
+<div id="botoes">
+    <button onclick="maiusculo()" id="botao1">CAIXA ALTA</button>
+    <button onclick="minusculo()" id="botao2">caixa baixa</button>
+</div>
+<script>
+    function maiusculo(){
+        var TextBox = document.getElementById("TextBox");
+        TextBox.value = TextBox.value.toUpperCase();}
+
+    function minusculo(){
+        var TextBox = document.getElementById("TextBox");
+        TextBox.value = TextBox.value.toLowerCase();}
+
+</script>
+
+<footer id="footer">
+
+        <button onclick="window.location.href = '/html/index.html'" id="home">Home</button>
+
+      <div class="autor">
+        &copy; autor <strong><span>Jadson</span></strong>
+      </div>
+      <div class="github">
+        <a href="https://github.com/Jadson-GTR">github</a>
+     </div>
+ </footer>
+
+</body>
+</html>
